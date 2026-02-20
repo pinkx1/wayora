@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const destinations = [
   {
@@ -34,8 +34,9 @@ export function Destinations() {
             <div className="inline-block px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600 mb-4">
               Our Destination
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] max-w-xl leading-tight">
-              Your Journey to the Perfect Destination Begins Here
+            <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] max-w-[780px] leading-tight">
+              <span className="block">Your Journey to the Perfect</span>
+              <span className="block">Destination Begins Here</span>
             </h2>
           </div>
           
@@ -54,7 +55,7 @@ export function Destinations() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {destinations.map((dest) => (
-            <div key={dest.id} className="group relative h-[400px] rounded-3xl overflow-hidden cursor-pointer">
+            <div key={dest.id} className="group relative h-[470px] rounded-3xl overflow-hidden cursor-pointer">
               <img 
                 src={dest.image} 
                 alt={dest.name} 
@@ -62,8 +63,8 @@ export function Destinations() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               
-              <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <ArrowUpRight className="w-5 h-5 text-white" />
+              <div className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white grid place-items-center shadow-[0_10px_24px_rgba(9,20,47,0.18)]">
+                <ArrowUpRight className="w-5 h-5 text-[#09142f]" />
               </div>
 
               <div className="absolute bottom-6 left-6 text-white">
@@ -78,11 +79,11 @@ export function Destinations() {
         </div>
 
         <div className="flex justify-center mt-12 gap-4">
-          <button className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition-colors">
-            <ArrowLeft className="w-5 h-5 text-gray-600" />
+          <button className="w-12 h-12 rounded-full bg-[#f1f5f9] flex items-center justify-center hover:bg-[#e2e8f0] transition-colors">
+            <ChevronLeft className="w-5 h-5 text-[#94a3b8]" />
           </button>
-          <button className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100 transition-colors">
-            <ArrowRight className="w-5 h-5 text-gray-600" />
+          <button className="w-12 h-12 rounded-full bg-[#f1f5f9] flex items-center justify-center hover:bg-[#e2e8f0] transition-colors">
+            <ChevronRight className="w-5 h-5 text-[#94a3b8]" />
           </button>
         </div>
       </div>
