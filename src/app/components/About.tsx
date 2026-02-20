@@ -22,12 +22,17 @@ export function About() {
               At VistaTrip, we believe travel should be simple, inspiring, and unforgettable. We create thoughtfully planned journeys that help you discover destinations in the most meaningful way—without the stress. From breathtaking landscapes to unique local experiences, our team focuses on quality, comfort, and authenticity.
             </p>
             
-            <button className="px-6 py-3 rounded-full border border-gray-300 hover:border-gray-900 hover:bg-white transition-colors flex items-center gap-3 font-medium group">
-              Start your trip
-              <span className="bg-[#0f172a] text-white rounded-full p-1.5 group-hover:scale-110 transition-transform">
-                <ArrowUpRight className="w-3 h-3" />
-              </span>
-            </button>
+            <div className="flex items-center gap-[4px]">
+              <button className="h-14 px-9 rounded-full border border-[#09142f] bg-transparent text-[#0f172a] text-base font-medium tracking-tight hover:bg-[#0f172a]/5 transition-colors">
+                Start your trip
+              </button>
+              <button
+                aria-label="Start your trip"
+                className="h-14 w-14 rounded-full border border-[#cbd5e1] bg-[#0f172a] text-white flex items-center justify-center hover:bg-[#1e293b] transition-colors"
+              >
+                <ArrowUpRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* Right Images */}

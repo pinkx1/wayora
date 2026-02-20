@@ -39,12 +39,15 @@ export function Destinations() {
             </h2>
           </div>
           
-          <div className="mt-8 md:mt-0 flex items-center gap-4">
-             <button className="px-6 py-3 rounded-full border border-gray-200 hover:border-gray-900 hover:bg-gray-50 transition-colors flex items-center gap-2 font-medium">
+          <div className="mt-8 md:mt-0 flex items-center gap-[4px]">
+             <button className="h-14 px-9 rounded-full border border-[#09142f] bg-transparent text-[#0f172a] text-base font-medium tracking-tight hover:bg-[#0f172a]/5 transition-colors">
                See All Destination
-               <span className="bg-black text-white rounded-full p-1">
-                 <ArrowUpRight className="w-3 h-3" />
-               </span>
+             </button>
+             <button
+               aria-label="See all destination"
+               className="h-14 w-14 rounded-full border border-[#cbd5e1] bg-[#0f172a] text-white flex items-center justify-center hover:bg-[#1e293b] transition-colors"
+             >
+               <ArrowUpRight className="w-5 h-5" />
              </button>
           </div>
         </div>

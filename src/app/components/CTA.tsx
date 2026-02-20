@@ -18,12 +18,17 @@ export function CTA() {
                 Embark on a journey through stunning dunes, serene oases, and breathtaking landscapes. Your unforgettable desert adventure starts here.
               </p>
               
-              <button className="px-8 py-4 rounded-full border border-gray-300 hover:bg-[#0f172a] hover:text-white hover:border-[#0f172a] transition-all flex items-center gap-3 font-medium group w-fit">
-                Start your trip
-                <span className="bg-[#0f172a] text-white rounded-full p-1.5 group-hover:bg-white group-hover:text-[#0f172a] transition-colors">
-                  <ArrowUpRight className="w-4 h-4" />
-                </span>
-              </button>
+              <div className="flex items-center gap-[4px] w-fit">
+                <button className="h-14 px-9 rounded-full border border-[#09142f] bg-transparent text-[#0f172a] text-base font-medium tracking-tight hover:bg-[#0f172a]/5 transition-colors">
+                  Start your trip
+                </button>
+                <button
+                  aria-label="Start your trip"
+                  className="h-14 w-14 rounded-full border border-[#cbd5e1] bg-[#0f172a] text-white flex items-center justify-center hover:bg-[#1e293b] transition-colors"
+                >
+                  <ArrowUpRight className="w-5 h-5" />
+                </button>
+              </div>
            </div>
 
            <div className="flex-1 w-full relative h-[400px]">

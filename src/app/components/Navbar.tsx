@@ -44,7 +44,7 @@ export function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-[4px]">
             <button className="h-14 px-9 rounded-full border border-[#7ea4da] bg-transparent text-white text-base font-medium tracking-tight shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] hover:bg-white/10 transition-colors">
               Book schedule
             </button>
