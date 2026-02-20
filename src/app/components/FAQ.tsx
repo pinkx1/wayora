@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Plus, Minus, ArrowDown } from 'lucide-react';
+﻿import React, { useState } from 'react';
+import { ArrowDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const faqs = [
   {
-    question: "What types of trips does VistaTrip offer?",
+    question: "What types of trips does Wayora offer?",
     answer: "We offer a wide range of trips including adventure tours, relaxing beach getaways, cultural immersions, and luxury escapes tailored to your preferences."
   },
   {
@@ -12,7 +12,7 @@ const faqs = [
     answer: "You can cancel up to 14 days before your trip for a full refund. Within 14 days, we offer travel credits or partial refunds depending on the specific booking terms."
   },
   {
-    question: "Are VistaTrip's trips safe and well-guided?",
+    question: "Are Wayora's trips safe and well-guided?",
     answer: "Yes, safety is our top priority. All our guides are certified professionals, and we carefully vet all accommodations and transport partners."
   },
   {
@@ -36,14 +36,15 @@ export function FAQ() {
           FAQ
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: Content & Image */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-12 leading-tight">
-              All You Should Know Before<br />Embarking on Your Desert Journey
+              <span className="block whitespace-nowrap max-[640px]:whitespace-normal">All You Should Know Before</span>
+              <span className="block whitespace-nowrap max-[640px]:whitespace-normal">Embarking on Your Desert Journey</span>
             </h2>
             
-            <div className="rounded-3xl overflow-hidden h-[300px] w-full relative">
+            <div className="rounded-3xl overflow-hidden h-[430px] max-[1024px]:h-[360px] w-full relative">
               <img 
                 src="https://images.unsplash.com/photo-1689061410429-ce42733e0b23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXNlcnQlMjBzYW5kJTIwZHVuZXMlMjBhZXJpYWx8ZW58MXx8fHwxNzcxNDQ0NDQwfDA&ixlib=rb-4.1.0&q=80&w=1080" 
                 alt="Desert Landscape" 
@@ -53,17 +54,18 @@ export function FAQ() {
           </div>
 
           {/* Right: Accordion */}
-          <div>
-             <div className="mb-8 flex justify-between items-end">
+          <div className="lg:h-full lg:flex lg:flex-col">
+             <div className="mt-[20px] mb-8 text-right">
                 <div>
                    <h3 className="text-sm font-bold text-gray-900 mb-1">Didn't see your question?</h3>
-                   <p className="text-xs text-gray-500 max-w-xs">
-                     Our team is here to help — just reach out and we'll reply shortly.
+                   <p className="text-xs text-gray-500 max-w-xs ml-auto leading-relaxed">
+                     <span className="block whitespace-nowrap">Our team is here to help - just reach</span>
+                     <span className="block">out and we'll reply shortly.</span>
                    </p>
                 </div>
              </div>
 
-             <div className="space-y-4">
+             <div className="space-y-4 lg:mt-auto">
                {faqs.map((faq, index) => (
                  <div 
                    key={index} 
@@ -74,7 +76,7 @@ export function FAQ() {
                      className="w-full px-6 py-4 flex items-center justify-between text-left focus:outline-none"
                    >
                      <span className="font-semibold text-gray-900">{faq.question}</span>
-                     <span className="text-gray-400">
+                     <span className="text-gray-900">
                        <ArrowDown className={`w-4 h-4 transition-transform ${openIndex === index ? 'rotate-180' : ''}`} />
                      </span>
                    </button>
@@ -101,3 +103,4 @@ export function FAQ() {
     </section>
   );
 }
+

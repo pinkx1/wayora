@@ -35,9 +35,9 @@ export function VideoSection() {
             </button>
           </div>
 
-          <div className="absolute top-10 right-10 bg-white/20 backdrop-blur-md p-6 rounded-3xl max-w-xs text-white">
-            <div className="text-5xl font-bold mb-2">95%</div>
-            <div className="text-sm font-medium leading-relaxed">
+          <div className="absolute top-10 right-10 max-w-xs text-white text-right">
+            <div className="text-[56px] leading-none font-bold mb-2">95%</div>
+            <div className="text-[22px] leading-[1.35] font-medium">
               Guests say they felt truly connected to nature.
             </div>
           </div>

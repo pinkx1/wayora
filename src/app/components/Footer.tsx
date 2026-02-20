@@ -1,4 +1,5 @@
-import React from 'react';
+﻿import React from 'react';
+import brandLogo from "../../../ChatGPT Image Feb 20, 2026, 07_36_00 PM.png";
 
 export function Footer() {
   return (
@@ -8,15 +9,15 @@ export function Footer() {
           
           {/* Brand */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="bg-white text-[#0f172a] p-1.5 rounded-full">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
-                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+            <div className="flex items-center justify-start">
+              <div className="flex items-center justify-start gap-3">
+                <div className="flex items-center justify-center shrink-0">
+                  <img src={brandLogo} alt="wayora logo" className="h-16 w-auto md:h-[80px]" />
+                </div>
+                <div className="flex items-center">
+                  <span className="font-bold text-2xl md:text-[30px] tracking-tight lowercase leading-none">wayora</span>
+                </div>
               </div>
-              <span className="font-bold text-xl tracking-tight">VistaTrip</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Experience the magic of the desert with carefully crafted trips designed for adventure, relaxation, and unforgettable memories.
@@ -61,7 +62,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <div>
-            © 2025 VistaTrip. All rights reserved.
+            © 2025 wayora. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Terms & Condition</a>
@@ -72,3 +73,6 @@ export function Footer() {
     </footer>
   );
 }
+
+
+

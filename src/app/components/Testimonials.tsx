@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star, ArrowLeft, ArrowRight, X } from 'lucide-react';
+﻿import React from 'react';
+import { Star, ArrowLeft, ArrowRight } from 'lucide-react';
 
 const testimonials = [
   {
@@ -63,7 +63,7 @@ export function Testimonials() {
               Traveler story
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4">
-              How People Use VistaTrip in<br />Their Daily Routine
+              How People Use Wayora in<br />Their Daily Routine
             </h2>
             <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
               <span className="font-bold">4.6/5</span>
@@ -100,7 +100,7 @@ export function Testimonials() {
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((item) => (
-            <div key={item.id} className={`p-6 rounded-3xl ${item.bgColor} relative`}>
+            <div key={item.id} className="p-6 rounded-3xl bg-gray-50 relative">
               <p className="text-gray-800 font-medium mb-6 leading-relaxed">
                 "{item.text}"
               </p>
@@ -111,9 +111,6 @@ export function Testimonials() {
                   <div className="text-xs text-gray-500">{item.role}</div>
                 </div>
               </div>
-              <button className="absolute top-6 right-6 text-gray-400 hover:text-gray-900">
-                <X className="w-4 h-4" />
-              </button>
             </div>
           ))}
         </div>
@@ -126,3 +123,4 @@ export function Testimonials() {
     </section>
   );
 }
+

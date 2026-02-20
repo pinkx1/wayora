@@ -3,9 +3,9 @@ import { ArrowUpRight } from 'lucide-react';
 
 export function CTA() {
   return (
-    <section className="py-20 bg-gray-50/50">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-[3rem] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12 shadow-sm border border-gray-100">
+        <div className="bg-gray-100 rounded-[3rem] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-12 shadow-sm border border-gray-200">
            
            <div className="flex-1 space-y-8">
               <div className="inline-block px-4 py-1.5 rounded-full border border-gray-200 text-sm font-medium text-gray-600">

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import statsGlobeImage from "../../../ChatGPT Image Feb 20, 2026, 04_36_40 PM (1).png";
 
 export function Stats() {
@@ -7,7 +7,7 @@ export function Stats() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[32px] relative z-10">
         <div className="text-center mb-12">
           <div className="relative -top-[15px] inline-block bg-white shadow-lg px-6 py-3 rounded-full text-[17px] leading-none font-medium text-gray-600 mb-3">
-            Real VistaTrip, real numbers
+            Real Wayora, real numbers
           </div>
 
           <div className="relative w-fit mx-auto">
@@ -64,21 +64,21 @@ export function Stats() {
             <div className="text-3xl font-bold text-[#0f172a] mb-2">300+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">Natural Destinations</div>
             <p className="text-gray-500 text-sm">
-              At VistaTrip, we design travel experiences that feel personal, seamless, and memorable.
+              At Wayora, we design travel experiences that feel personal, seamless, and memorable.
             </p>
           </div>
           <div className="bg-white rounded-3xl p-8 hover:shadow-lg transition-shadow">
             <div className="text-3xl font-bold text-[#0f172a] mb-2">12K+</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">Satisfied Explorers</div>
             <p className="text-gray-500 text-sm">
-              At VistaTrip, we design travel experiences that feel personal, seamless, and memorable.
+              At Wayora, we design travel experiences that feel personal, seamless, and memorable.
             </p>
           </div>
           <div className="bg-white rounded-3xl p-8 hover:shadow-lg transition-shadow">
             <div className="text-3xl font-bold text-[#0f172a] mb-2">100%</div>
             <div className="text-lg font-semibold text-gray-800 mb-2">Authentic Experiences</div>
             <p className="text-gray-500 text-sm">
-              At VistaTrip, we design travel experiences that feel personal, seamless, and memorable.
+              At Wayora, we design travel experiences that feel personal, seamless, and memorable.
             </p>
           </div>
         </div>
@@ -86,3 +86,4 @@ export function Stats() {
     </section>
   );
 }
+

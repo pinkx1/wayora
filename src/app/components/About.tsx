@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 export function About() {
@@ -19,7 +19,7 @@ export function About() {
               Journey through beautiful routes and scenic locations in AlUla's natural surroundings.
             </p>
             <p className="text-gray-500 mb-8 leading-relaxed">
-              At VistaTrip, we believe travel should be simple, inspiring, and unforgettable. We create thoughtfully planned journeys that help you discover destinations in the most meaningful way—without the stress. From breathtaking landscapes to unique local experiences, our team focuses on quality, comfort, and authenticity.
+              At Wayora, we believe travel should be simple, inspiring, and unforgettable. We create thoughtfully planned journeys that help you discover destinations in the most meaningful wayâ€”without the stress. From breathtaking landscapes to unique local experiences, our team focuses on quality, comfort, and authenticity.
             </p>
             
             <div className="flex items-center gap-[4px]">
@@ -72,3 +72,4 @@ export function About() {
     </section>
   );
 }
+
